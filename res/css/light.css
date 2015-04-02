@@ -1,6 +1,5 @@
 @font-face {
 	font-family:segoepr;
-	src:url("/res/fonts/segoepr.ttf"),url("/res/fonts/segoepr.eot"),url("/res/fonts/segoepr.otf"),url("/res/fonts/segoepr.svg"),url("/res/fonts/segoepr.woff");
 }
 ::selection {
 	color:#fff;
@@ -379,18 +378,16 @@ footer {
 .post-main a {
 	color:#747f8c;
 	margin:0 2px;
-	padding:3px;
-	border-bottom:2px solid #e2e2e2;
-	padding-bottom:0;
+    border-bottom:2px solid #e2e2e2;
+    padding: 3px 3px 0;
 }
 .post-main a:hover {
 	color:#00bb2f;
 }
 a.fancybox {
 	margin:0;
-	padding:0;
-	border-bottom:0;
-	padding-bottom:0;
+    border-bottom:0;
+    padding: 0;
 }
 hr {
 	height:4px;
