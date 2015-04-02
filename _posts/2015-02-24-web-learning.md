@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "web服务器学习记录"
-categories: 网络
+categories: 编程学习
 date: 2015-02-24 09:46:24
 tags: [网络,服务器]
 ---

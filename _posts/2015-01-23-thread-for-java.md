@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "java线程"
-categories: Java
+categories: 编程学习
 date: 2015-01-23 14:41:42
 tags: 多线程
 ---

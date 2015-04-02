@@ -10,8 +10,7 @@ title: 链接
 
 <ul>
 {% for org_hash in site.data.orgs %}
-	<hr id="line"/>
-
+	<hr class="line"/>
 	{% assign org = org_hash[1] %}
 	<li class="category-box-sub"><a><i class="{{ org.icon }}"></i>&nbsp;{{ org.name }}&nbsp;<sup>{{ org.members | size }}</sup></a></li>
 

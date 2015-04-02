@@ -3,18 +3,8 @@ layout: blog
 post: true
 ---
 
-<header class="post-header">
-  <h1 class="post-title"><a>{{ page.title }}</a></h1>
-  <p class="post-meta">
-    <i class="fa fa-calendar"></i>
-    {{ page.date | date: "%Y年%m月%d日" }}
-    <i class="space"></i>
-    <i class="fa fa-tags"></i>
-    {% for category in page.categories %}
-    <a class="post-category" href="/page/category.html#{{ category }}">{{ category }}</a>
-    {% endfor %}
-  </p>
-</header>
+{% assign t_page = page%}
+{% include header.html %}
 <div class="post-main">
 {{ content }}
 </div>

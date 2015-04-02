@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "线性表"
-categories: [数据结构/算法,C++]
+categories: 算法练习
 date: 2015-03-05 17:15:05
 tags: [线性表,链表]
 ---

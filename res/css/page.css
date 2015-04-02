@@ -8,7 +8,7 @@
 	letter-spacing:1px;
 }
 .link {
-	margin-left:13.5em;
+	margin-left:4em;
 	margin-top:-24px;
 }
 .link a {
@@ -27,23 +27,14 @@
 	position:relative;
 	margin-left:70px;
 	font-size:18px;
-	height:6em;
-}
-.timing:before {
-	content:"";
-	width:5px;
-	left:8em;
-	top:10px;
-	bottom:-35px;
-	background:#e6e6e6;
-	position:absolute;
+	/*height:1em;*/
 }
 .point-time {
 	position:absolute;
-	width:15px;
-	height:15px;
+	width:0.5em;
+	height:0.5em;
 	top:5px;
-	left:8em;
+	left:-1em;
 	background:#1c87bf;
 	margin-left:-5px;
 	border-radius:100%;
@@ -67,21 +58,8 @@
 	.timing {
 		margin-left:29px;
 	}
-	.timing:before {
-		left:4em;
-		width:4px;
-	}
-	.point-time {
-		left:4em;
-	}
-	.point-time {
-		width:13px;
-		height:13px;
-		margin-left:-4px;
-		box-shadow:0 0 0 3px #fff;
-	}
 	.link {
-		margin-left:6.45em;
+		margin-left:4em;
 		margin-top:-20px;
 		font-size:16px;
 	}
@@ -102,7 +80,7 @@
 }
 .category-box-sub {
 	font-size:20px;
-	margin-left:-38px;
+    display: inline-block;
 }
 .category-sub {
 	color:#1abc9c;
@@ -121,7 +99,6 @@
 }
 .category-box-sub a:hover {
 	color:#00D809;
-	padding-left:10px;
 }
 .category-sub-title {
 	text-shadow:0 0 1px;
@@ -135,7 +112,7 @@
 .category-sub-title:hover {
 	padding-left:10px;
 }
-#line {
+.line {
 	margin-top:35px;
 	margin-bottom:30px;
 }
@@ -144,10 +121,12 @@
 		font-size:16px;
 		margin-left:-35px;
 	}
-	.category-box-sub {
-		margin-left:-35px;
-	}
 	.category-box-sub a:hover,.category-sub-title:hover {
 		padding-left:0;
 	}
+}
+
+.comment-img{
+    width: 30em;
+    margin: 15px auto;
 }

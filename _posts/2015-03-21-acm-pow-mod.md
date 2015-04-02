@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "次方求模"
-categories: [数据结构/算法,C++]
+categories: 算法练习
 date: 2015-03-21 19:37:55
 tags: acm
 ---

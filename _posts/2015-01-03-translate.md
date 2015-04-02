@@ -2,7 +2,7 @@
 layout: post
 title: "C#利用谷歌进行翻译"
 date: 2015-1-3
-categories: C#
+categories: 编程学习
 tags: [c#,translate]
 ---
 

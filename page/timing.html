@@ -5,25 +5,28 @@ title: 时间轴
 
 <link rel="stylesheet" href="/res/css/page.css">
 <div>
-{% for post in site.posts reverse %}
-{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-{% if year != y %}{% assign year = y %}<h1 class="year">{{ post.date | date: "%Y" }}</h1>{% endif %}
-<div class="timing">
-  <time class="time">{{ post.date | date: "%m" }}-{{ post.date | date: "%d" }}</time>
-  <div class="link"><a href="{{ post.url }}">{{post.title}}</a></div>
-  <div class="point-time "></div>
-</div>
-{% endfor %}
+    {% for post in site.posts %}
+    {% assign date = post.date%}
+    {% assign y = date | date:"%Y" %}
+    {% if year != y %}{% assign year = y%}
+    <h1 class="year">{{y}}</h1>
+    {% endif%}
+    <div class="timing">
+        <div class="point-time"></div>
+        <time class="time">{{ date | date: "%m-%d" }}</time>
+        <div class="link"><a href="{{ post.url }}">{{post.title}}</a></div>
+    </div>
+    {% endfor %}
 </div>
 <br/>
 <script>
-$(function() {
-  var tags_a = $(".point-time");
-  tags_a.each(function(){
-    var x = 5;
-    var y = 0;
-    var rand = parseInt(Math.random() * (x - y + 1) + y);
-    $(this).addClass("point"+rand);
-  });
-});
+function change() {
+    var tags_a = document.getElementsByClassName("point-time");
+    for(var i=0;i<tags_a.length;++i)
+    {
+        var rand = parseInt(Math.random() * 5)+1;
+        tags_a[i].className=tags_a[i].className+" point"+rand;
+    }
+}
+window.onload = change();
 </script>

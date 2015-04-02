@@ -2,7 +2,7 @@
 layout: post
 title: "Java中文转拼音"
 date: 2015-1-4
-categories: Java
+categories: 编程学习
 tags: [java,translate]
 ---
 

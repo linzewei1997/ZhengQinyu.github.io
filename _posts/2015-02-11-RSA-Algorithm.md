@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RSA算法"
-categories: [数据结构/算法]
+categories: 算法练习
 date: 2015-02-11 11:25:56
 tags: rsa
 ---

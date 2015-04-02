@@ -2,7 +2,7 @@
 layout: post
 title: "jekyll install"
 date: 2015-1-2
-categories: Jekyll
+categories: 环境配置
 tags: jekyll
 ---
 windows安装jekyll最后的步骤

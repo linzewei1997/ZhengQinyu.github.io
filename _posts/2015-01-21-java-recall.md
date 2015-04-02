@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "java回调"
-category: Java
+categories: 编程学习
 date: 2015-01-21
 tags: [java,回调]
 ---

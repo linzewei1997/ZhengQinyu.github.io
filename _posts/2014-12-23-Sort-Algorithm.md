@@ -2,8 +2,8 @@
 layout: post
 title:  "排序算法"
 date:   2014-12-23
-categories: [数据结构/算法,Java]
-tags: sort
+categories: 算法练习
+tags: [排序,java]
 ---
 排序算法
 <!-- 使用“highlight java linenos”时，显示行数-->

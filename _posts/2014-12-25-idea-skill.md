@@ -2,7 +2,7 @@
 layout: post
 title:  "IDEA修改"
 date:   2014-12-25
-categories: 技巧
+categories: 环境配置
 tags: idea
 ---
 在Intellij IDEA中修改模板中user变量名称

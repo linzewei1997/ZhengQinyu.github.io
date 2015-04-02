@@ -3,17 +3,21 @@
   title: 时间轴
 
 - href: /page/category.html
-  icon: fa fa-tags
+  icon: fa fa-list
   title: 分类
 
-- href: /page/resource.html
+- href: /page/tag.html
+  icon:  fa fa-tags
+  title: 标签
+
+- href: /page/comment.html
+  icon:  fa fa-comments
+  title: 留言
+
+- href: /page/link.html
   icon:  fa fa-link
   title: 链接
 
-#- href: /page/read.html
-#  icon:  fa fa-book
-#  title: 阅读
-
 - href: /page/about.html
-  icon: fa fa-paper-plane-o
+  icon: fa fa-user
   title: 关于

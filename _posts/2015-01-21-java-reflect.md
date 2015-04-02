@@ -2,7 +2,7 @@
 layout: post
 title: "Java反射机制"
 date: 2015-1-21
-categories: Java
+categories: 编程学习
 tags: 反射
 ---
 

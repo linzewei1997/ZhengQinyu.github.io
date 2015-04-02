@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "jboss配置oracle数据源"
-categories: 配置
+categories: 环境配置
 tags: [jboss,数据源,oracle]
 date: 2015-03-24 22:19:20
 ---

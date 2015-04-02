@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "素数求和问题"
-categories: [数据结构/算法,C++]
+categories: 算法练习
 date: 2015-03-12 23:23:06
 tags: [素数,acm]
 ---

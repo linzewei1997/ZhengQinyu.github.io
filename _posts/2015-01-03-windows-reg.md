@@ -2,7 +2,7 @@
 layout: post
 title: "windows注册表导入与删除"
 date: 2015-1-3
-categories: 技巧
+categories: 杂七杂八
 tags: [windows,register]
 ---
 

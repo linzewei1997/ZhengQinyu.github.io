@@ -2,7 +2,7 @@
 layout: post
 title: "Java常用的功能和技巧"
 date: 2015-1-19
-categories: Java
+categories: 编程学习
 tags: [java,random,正则表达式,异常,抽象类]
 ---
 
