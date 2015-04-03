@@ -1,4 +1,5 @@
-<div class="ds-thread" data-thread-key="{{ page.title }}" data-title="{{page.url}}" data-url="{{ site.blog.url }}{{ page.url }}"></div>
+{% assign tid = page.url | split:"/" | last | split:"." | first %}
+<div class="ds-thread" data-thread-key="{{ tid }}" data-title="{{ page.title }}" data-url="{{ site.blog.url }}{{ page.url }}"></div>
 <script type="text/javascript">
     var duoshuoQuery = {short_name:"{{ site.blog.duoshuo }}"};
     (function() {
