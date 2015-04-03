@@ -24,10 +24,13 @@ blockquote p {
 
 # 关于作者
 
-<hr id="line"/>
+<hr class="line"/>
 
 
 
-> 名称: {{site.blog.name}}   
-> Email: <a href="mailto:{{site.author.email}}">{{site.author.email}}</a>  
-> GitHub：[{{site.author.name}}]({{site.author.github}})  
+> 名称:{{site.blog.name}}  
+> Email:[{{ site.author.email }}](mailto:{{ site.author.email }})  
+> GitHub:[{{ site.author.name }}]({{ site.author.github }})  
+> QQ:[{{ site.author.qq }}](tencent://message/?uin={{ site.author.qq }})  
+
+<hr class="line"/>
