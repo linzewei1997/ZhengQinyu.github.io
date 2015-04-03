@@ -1,5 +1,6 @@
 markdown: kramdown
 highlighter: pygments
+exclude: ["*.bat","README.md", "Rakefile.rb"]
 permalink: blog/:year/:month/:day/:title.html
 paginate: 6
 paginate_path: page/:num
@@ -11,7 +12,6 @@ blog:
     url: http://zhengqinyu.github.io                    # 博客地址
     duoshuo: huanzhen                                    # 多说ID
     tongji: c086e0236c082c83fd4c34661f274848             # 百度统计ID
-    zhanzhang: ESiMD8yRf2                                #百度站长
     qiniu: http://7tsy3b.com1.z0.glb.clouddn.com         # 七牛云地址
 author:
     name: Quincy                                    # 作者名称

@@ -1,3 +1,4 @@
-User-Agent: *
-
-Sitemap: http://quincyzheng.github.io/sitemap.txt
+# robots.txt generated at http://tool.chinaz.com/robots/ 
+User-agent: *
+Disallow: 
+Sitemap: http://zhengqinyu.github.io/sitemap.xml
