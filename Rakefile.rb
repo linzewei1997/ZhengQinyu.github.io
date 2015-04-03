@@ -54,24 +54,6 @@ task :post do
   end
 end
 
-# Usage: rake life title="Post Name"
-desc "Begin a new life-post in #{CONFIG['life']}"
-task :life do
-  abort("rake aborted: '#{CONFIG['life']}' directory not found.") unless FileTest.directory?(CONFIG['life'])
-  title = ENV["title"] || "New-Life"
-  filename = File.join(CONFIG['life'], "#{title.gsub(/ /,'-').gsub(/[^\w-]/, '')}.#{CONFIG['post_ext']}")
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
-  end
-  puts "Creating new life-post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: life"
-    post.puts "title: #{title.gsub(/-/,' ')}"
-    post.puts "---"
-  end
-end
-
 # Usage: rake page title="Page Name"
 desc "Begin a new page in #{CONFIG['page']}"
 task :page do

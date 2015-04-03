@@ -417,7 +417,8 @@ sup {
 }
 blockquote {
 	font-family:"Microsoft YaHei",SimHei,"Ubuntu Mono",Ubuntu,"Ubuntu Light",Arial,"STHeiti",Corbel,sans-serif;
-	border-left:4px solid #DDDDDD;
+    background: rgba(203, 224, 237, 0.75);
+	border-left:8px solid #DDDDDD;
 	color:#777777;
 	margin:auto;
 	padding-left:10px;
@@ -426,7 +427,7 @@ blockquote {
 code {
 	font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
 	font-size:17px;
-	background:rgba(235,245,245,0.75);
+	background: rgba(207, 236, 237, 0.75);
 	color:#494949;
 	margin:0 2px;
 	padding:0 4px;
@@ -438,7 +439,7 @@ code {
 pre code {
 	font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
 	font-size:16px;
-	background:rgba(235,245,245,0.75);
+	background: rgba(207, 237, 207, 0.75);
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;

@@ -10,7 +10,8 @@ blog:
     title: Quincy                                        # 网页标题
     url: http://zhengqinyu.github.io                    # 博客地址
     duoshuo: huanzhen                                    # 多说ID
-    tongji: ca4a131cfb73425572b6d440ad3db20a             # 百度统计ID
+    tongji: 06bf0c7f3dfe803fd53db62b4a40b627             # 百度统计ID
+    zhanzhang: ESiMD8yRf2                                #百度站长
     qiniu: http://7tsy3b.com1.z0.glb.clouddn.com         # 七牛云地址
 author:
     name: Quincy                                    # 作者名称
