@@ -11,9 +11,7 @@ layout: null
     <url>
         <loc>{{site.blog.url}}/</loc>
         <lastmod>2014-12-16 00:00:00 +0800</lastmod>
-    </url>{% for page in site.pages reversed %}
-    {% assign t = page.url | split:"." | last %}
-    {% if t != "xml" %}
+    </url>{% for page in site.pages reversed %}{% assign t = page.url | split:"." | last %}{% if t != "xml" %}
     <url>
         <loc>{{ site.blog.url }}{{ page.url }}</loc>
         <lastmod>2014-12-16 00:00:00 +0800</lastmod>

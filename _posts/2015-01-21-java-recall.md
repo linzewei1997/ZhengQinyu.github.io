@@ -93,3 +93,5 @@ tags: [java,回调]
     }
     }
 	{% endhighlight %}
+
+总结来说，java的回调其实就是让父类执行子类的方法。
