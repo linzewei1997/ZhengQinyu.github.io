@@ -43,8 +43,8 @@ tags: [网络,服务器]
  User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows 98)   
  Content-Length: 33   
  Content-Type: application/x-www-form-urlencoded   
- Accept-Encoding: gzip, deflate   
-   
+>Accept-Encoding: gzip, deflate   
+>  
 >lastName=Franks&firstName=Michael
 
 ## HTTP响应也包括上面三个部分。  
@@ -54,12 +54,12 @@ tags: [网络,服务器]
 下面是一个HTTP响应的例子 
 
 >HTTP/1.1 200 OK   
-Server: Microsoft-IIS/4.0   
-Date: Mon, 5 Jan 2004 13:13:33 GMT   
-Content-Type: text/html   
-Last-Modified: Mon, 5 Jan 2004 13:13:12 GMT   
-Content-Length: 112   
-   
+ Server: Microsoft-IIS/4.0   
+ Date: Mon, 5 Jan 2004 13:13:33 GMT   
+ Content-Type: text/html   
+ Last-Modified: Mon, 5 Jan 2004 13:13:12 GMT   
+>Content-Length: 112   
+>   
 > <html\>   
 > <head\>   
 > <title\>HTTP Response Example</title\>   

@@ -8,8 +8,9 @@ tags: [java,translate]
 
 java使用pinyin4j将中文转换成拼音
 
-<!-- more -->
 1、使用pinyin4j来实现，可以在[pinyin4j官网](http://sourceforge.net/projects/pinyin4j/files/)下载.
+
+<!-- more -->
 
 	{% highlight java %}
 	package UserOther;

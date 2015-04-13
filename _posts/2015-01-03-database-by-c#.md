@@ -8,8 +8,9 @@ tags: [c#,oracle]
 
 C#连接oracle数据库
 
-<!-- more -->
 1、创建连接
+
+<!-- more -->
 
 	{% highlight c# %}
     using System;

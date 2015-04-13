@@ -6,9 +6,18 @@ categories: 编程学习
 tags: [c#,translate]
 ---
 
-C#使用谷歌翻译对单词进行翻译
+### C#使用谷歌翻译对单词进行翻译
+
+需要添加的引用还是要添加的
+
+	using System;
+	using System.IO;
+	using System.Net;
 
 <!-- more -->
+
+实现如下：
+
 	{% highlight c# %}
     class Program
     {
@@ -41,9 +50,3 @@ C#使用谷歌翻译对单词进行翻译
         }
     }
 	{% endhighlight %}
-
-当然，需要添加的引用还是要添加的
-
-	using System;
-	using System.IO;
-	using System.Net;

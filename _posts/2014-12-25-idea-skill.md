@@ -7,9 +7,9 @@ tags: idea
 ---
 在Intellij IDEA中修改模板中user变量名称
 
-<!-- more -->
-
 在Intellij IDEA中的注释模板中的${user}名称是根据当前操作系统的登录名来取的，有时候登录名称和我们实际的user名称并不相同。
+
+<!-- more -->
 
 修改方法如下：
 

@@ -7,8 +7,9 @@ tags: jekyll
 ---
 windows安装jekyll最后的步骤
 
-<!-- more -->
 1、在windows下安装jekyll是，使用`gem install jekyll`时安装不了（又是GFW吧。。）最后在[这里](https://github.com/jekyll/jekyll/issues/1409 "https://github.com/jekyll/jekyll/issues/1409")找到了解决方法
+
+<!-- more -->
 
 ----------
 >gem sources --remove http://rubygems.org/

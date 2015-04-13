@@ -8,7 +8,6 @@ tags: [windows,register]
 
 注册表导入与删除
 
-<!-- more -->
 导入如下格式：
 
 	Windows Registry Editor Version 5.00  
@@ -20,6 +19,8 @@ tags: [windows,register]
   
 	[HKEY_CLASSES_ROOT\Python.File\shell\runas\command]  
 	@="path \"%1\" %*" 
+
+<!-- more -->
 
 删除如下格式，就是在导入的记录前加 "-",eg:
 
