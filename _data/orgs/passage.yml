@@ -12,3 +12,5 @@ members:
     link: http://www.cnblogs.com/fish-li/archive/2011/07/03/2096903.html
   - name: <<程序员编程艺术：面试和算法心得>>
     link: https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/Readme.md
+  - name: Zend Framework 2教程
+    link: https://zf2-cn.readthedocs.org/en/latest/user-guide/skeleton-application.html
