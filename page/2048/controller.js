@@ -19,10 +19,13 @@ function isGameOver() {
 /*控制*/
 function keyDown(e) {
     if(gameStatus != "started")return;
-    var code = e.which;
+    
+    var code=0,e=e||event;
+　　code=e.keyCode||e.which||e.charCode;
+
     if (code >= 37 && code <= 40) {
         /*禁用按钮原有功能*/
-        event.returnValue = false;
+        e.preventDefault();
         switch (code) {
             case 37:/*左*/
                 moveLeft();

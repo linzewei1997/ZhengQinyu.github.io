@@ -2,3 +2,4 @@ _site/
 .idea/
 *.bat
 _drafts/
+.backup/
