@@ -3,3 +3,4 @@ _site/
 *.bat
 _drafts/
 .backup/
+*.ps1
