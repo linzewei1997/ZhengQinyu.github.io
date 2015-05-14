@@ -1,6 +1,15 @@
 /**
  * Created by ZhengQinyu on 2015/3/17 0017.
  */
+ 
+// 全局变量
+var gameGrid = [];
+var tList = [];
+var rList = [];
+var gameSize = 4;
+var gameScore = 0;
+var gameStatus = "stoped";
+var checkStatus = 210; // 2 * 3 * 5 * 7
 
 /*格子背景颜色*/
 function numBgColor(number) {

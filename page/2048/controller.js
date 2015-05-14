@@ -1,19 +1,20 @@
-var gameStatus = "stoped";
-
 function startGame(){
     gameStatus = "started";
+    checkStatus = 210;
     resetGame();
     createOneNum();
     createOneNum();
     drawGameView();
 }
 
-/**/
+/*利用素数来判断方向,移动时判断就简单了*/
 function isGameOver() {
-    if (getEmptySize()==0 && !canMoveLeft() && !canMoveUp() && !canMoveRight() && !canMoveDown()) {
-        return true;
-    }
-    return false;
+    checkStatus = 1;
+    if(canMoveLeft())checkStatus *= 2;
+    if(canMoveUp())checkStatus *= 3;
+    if(canMoveRight())checkStatus *= 5;
+    if(canMoveDown())checkStatus *= 7;
+    return checkStatus == 1;
 }
 
 /*控制*/

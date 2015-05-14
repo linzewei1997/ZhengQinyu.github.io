@@ -1,7 +1,3 @@
-var gameGrid = [];
-var gameSize = 4;
-var gameScore = 0;
-
 /*初始化游戏数据*/
 function newArray() {
     for(var i=0;i<gameSize;++i) {
@@ -122,119 +118,98 @@ function canMoveDown() {
     return false;
 }
 
-
-function moveLeft(){
-    if(!canMoveLeft())return;
-    for(var i=0;i<gameSize;++i) {
-        var low= 0;
-        for (var j = 1; j < gameSize; ++j) {
-            //low表示格子能到达的最终位置,t表示当前位置
-            var t = j;
-            while(t!=low && gameGrid[i][t]!=0){
-                if(gameGrid[i][t-1]==0){
-                    gameGrid[i][t-1]=gameGrid[i][t];
-                    gameGrid[i][t] = 0;
-                    t--;
+// rList就是返回的移动后的结果
+function changeList(id){
+    //pos是下一个存放的位置
+    var pos = 0;
+    for(var j=0;j<id;++j){
+            if(rList[pos]==0)rList[pos] = tList[j];
+            else{
+                if(rList[pos] == tList[j]){
+                    rList[pos] += tList[j];
+                    pos ++;
                 }
-                else if(gameGrid[i][t-1] == gameGrid[i][t]){
-                    gameGrid[i][t-1] += gameGrid[i][t];
-                    gameScore += gameGrid[i][t-1];
-                    gameGrid[i][t] = 0;
-                    low = t;
-                    break;
-                }
-                else {
-                    low = t;
-                    break;
+                else{
+                    pos++;
+                    rList[pos] = tList[j];
                 }
             }
+        }
+}
+
+function moveLeft(){
+    if(checkStatus%2!=0)return;
+    for(var i=0;i<gameSize;++i)
+    {
+        var id=0;
+        //将非零数字存入临时表
+        for(var j=0;j<gameSize;++j)
+        {
+            rList[j] = 0;
+            if(gameGrid[i][j]!=0)tList[id++]=gameGrid[i][j];
+        }
+        changeList(id);
+        id = 0;
+        for(var j=0;j<gameSize;++j)
+        {
+            gameGrid[i][j] = rList[id++];
         }
     }
     createOneNum();
 }
 function moveRight(){
-    if(!canMoveRight())return;
-    for(var i=0;i<gameSize;++i) {
-        var low= gameSize-1;
-        for (var j = gameSize-2; j >=0; --j) {
-            //low表示格子能到达的最终位置,t表示当前位置
-            var t = j;
-            while(t!=low && gameGrid[i][t]!=0){
-                if(gameGrid[i][t+1]==0){
-                    gameGrid[i][t+1]=gameGrid[i][t];
-                    gameGrid[i][t] = 0;
-                    t++;
-                }
-                else if(gameGrid[i][t+1] == gameGrid[i][t]){
-                    gameGrid[i][t+1] += gameGrid[i][t];
-                    gameScore += gameGrid[i][t+1];
-                    gameGrid[i][t] = 0;
-                    low = t;
-                    break;
-                }
-                else {
-                    low = t;
-                    break;
-                }
-            }
+    if(checkStatus%5!=0)return;
+    for(var i=0;i<gameSize;++i)
+    {
+        var id=0;
+        for(var j=gameSize-1;j>=0;--j)
+        {
+            rList[j] = 0;
+            if(gameGrid[i][j]!=0)tList[id++]=gameGrid[i][j];
+        }
+        changeList(id);
+        id = 0;
+        for(var j=gameSize-1;j>=0;--j)
+        {
+            gameGrid[i][j] = rList[id++];
         }
     }
     createOneNum();
 }
 function moveUp(){
-    if(!canMoveUp())return;
-    for(var i=0;i<gameSize;++i) {
-        var low= 0;
-        for (var j = 1; j < gameSize; ++j) {
-            //low表示格子能到达的最终位置,t表示当前位置
-            var t = j;
-            while(t!=low && gameGrid[t][i]!=0){
-                if(gameGrid[t-1][i]==0){
-                    gameGrid[t-1][i]=gameGrid[t][i];
-                    gameGrid[t][i] = 0;
-                    t--;
-                }
-                else if(gameGrid[t-1][i] == gameGrid[t][i]){
-                    gameGrid[t-1][i] += gameGrid[t][i];
-                    gameGrid[t][i] = 0;
-                    gameScore += gameGrid[t-1][i];
-                    low = t;
-                    break;
-                }
-                else {
-                    low = t;
-                    break;
-                }
-            }
+    if(checkStatus%3!=0)return;
+    for(var j=0;j<gameSize;++j)
+    {
+        var id=0;
+        for(var i=0;i<gameSize;++i)
+        {
+            rList[i] = 0;
+            if(gameGrid[i][j]!=0)tList[id++]=gameGrid[i][j];
+        }
+        changeList(id);
+        id = 0;
+        for(var i=0;i<gameSize;++i)
+        {
+            gameGrid[i][j] = rList[id++];
         }
     }
     createOneNum();
 }
 function moveDown(){
-    if(!canMoveDown())return;
-    for(var i=0;i<gameSize;++i) {
-        var low= gameSize-1;
-        for (var j = gameSize-2; j >= 0; --j) {
-            //low表示格子能到达的最终位置,t表示当前位置
-            var t = j;
-            while(t!=low && gameGrid[t][i]!=0){
-                if(gameGrid[t+1][i]==0){
-                    gameGrid[t+1][i]=gameGrid[t][i];
-                    gameGrid[t][i] = 0;
-                    t++;
-                }
-                else if(gameGrid[t+1][i] == gameGrid[t][i]){
-                    gameGrid[t+1][i] += gameGrid[t][i];
-                    gameScore += gameGrid[t+1][i];
-                    gameGrid[t][i] = 0;
-                    low = t;
-                    break;
-                }
-                else {
-                    low = t;
-                    break;
-                }
-            }
+    if(checkStatus%7!=0)return;
+    for(var j=0;j<gameSize;++j)
+    {
+        var id=0;
+        for(var i=gameSize-1;i>=0;--i)
+        {
+            rList[i] = 0;
+            if(gameGrid[i][j]!=0)tList[id++]=gameGrid[i][j];
+        }
+        changeList(id);
+        id = 0;
+        for(var i=gameSize-1;i>=0;--i)
+        {
+            gameGrid[i][j] = rList[id++];
         }
     }
     createOneNum();
