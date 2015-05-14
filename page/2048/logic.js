@@ -127,6 +127,7 @@ function changeList(id){
             else{
                 if(rList[pos] == tList[j]){
                     rList[pos] += tList[j];
+                    gameScore += rList[pos];
                     pos ++;
                 }
                 else{
