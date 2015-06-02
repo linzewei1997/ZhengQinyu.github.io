@@ -20,3 +20,5 @@ members:
     link: http://beego.me/
   - name: 在线雨声
     link: http://raining.fm/raindrops/
+  - name: 谷歌
+    link: "https://www.google.com.hk/?gws_rd=cr,ssl"
