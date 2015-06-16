@@ -10,9 +10,9 @@ date: 2015-06-16 19:09:33
 
 利用`基姆拉尔森计算公式`,详情见 [百度百科](http://baike.baidu.com/link?url=tQ3ogPUKPc3xaJpavc_94RbeSomdoeaPF2n7opjLVQfn7H_8peSNRpeO_HG7r73HAYJZZHd4Bb6HvY7wdOAWZa)
 
-### 2、c++实现如下
-
 <!-- more -->
+
+### 2、c++实现如下
 
 	{% highlight c++ %}
 	#include <iostream>
