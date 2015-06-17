@@ -20,7 +20,8 @@ date: 2015-06-16 19:09:33
 	
 	int main()
 	{
-		int y, m, d;
+		char *week[7] = {"星期日","星期一","星期二","星期三","星期四","星期五","星期六"};
+		int y, m, d,t;
 		while (cin >> y >> m >> d)
 		{
 			if (m <= 2)
@@ -28,7 +29,8 @@ date: 2015-06-16 19:09:33
 				m += 12;
 				y--;
 			}
-			cout << (d + 2 * m + 3 * (m + 1) / 5 + y + y / 4 - y / 100 + y / 400 + 1) % 7 << endl;
+			t = (d + 2 * m + 3 * (m + 1) / 5 + y + y / 4 - y / 100 + y / 400 + 1) % 7;
+			cout << week[t] << endl;
 		}
 		//system("pause");
 		return 0;
