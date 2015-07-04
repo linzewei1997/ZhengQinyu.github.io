@@ -12,34 +12,34 @@ tags: [java,回调]
 
 ####1、首先定义接口
 
-	{% highlight java %}
-    public interface MyCallInterface {
+{% highlight java %}
+public interface MyCallInterface {
 
-    public void printName();
-	}
-	{% endhighlight %}
+public void printName();
+}
+{% endhighlight %}
 
 ####2、实现回调的关键类（这里相当于已经完成的项目）
 
-	{% highlight java %}
-    public class Caller {
+{% highlight java %}
+public class Caller {
 
-    //保存一个接口引用
-    private MyCallInterface callInterface;
+//保存一个接口引用
+private MyCallInterface callInterface;
 
-    //空的构造函数
-    public Caller() {
-    }
+//空的构造函数
+public Caller() {
+}
 
-    public void setCallFunc(MyCallInterface callInterface) {
-        this.callInterface = callInterface;
-    }
+public void setCallFunc(MyCallInterface callInterface) {
+    this.callInterface = callInterface;
+}
 
-    public void call() {
-        callInterface.printName();
-    }
-	}
-	{% endhighlight %}
+public void call() {
+    callInterface.printName();
+}
+}
+{% endhighlight %}
 
 ####3、真正实现的代码（这里相当于要完成的算法），实际还是用到了接口
 

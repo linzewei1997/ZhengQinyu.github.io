@@ -25,15 +25,15 @@ date: 2015-07-04 09:54:51
 将安装目录下的`my-default.ini`文件修改成`my.ini`,或者直接新建一个`my.ini`文件（我就直接新建一个了），打开编辑该文件。这里修改了编码方式为`utf-8`，其它的都选择默认的配置，配置文件修改如下：
 
 	{% highlight ini %}
-	[mysql]
-	default-character-set = utf8
+[mysql]
+default-character-set = utf8
 	
-	[mysqld]
-	character_set_server = utf8
-	basedir = D:\EnvPath\mysql-5.6.25-winx64
-	datadir = D:\EnvPath\mysql-5.6.25-winx64\data
+[mysqld]
+character_set_server = utf8
+basedir = D:\EnvPath\mysql-5.6.25-winx64
+datadir = D:\EnvPath\mysql-5.6.25-winx64\data
 	
-	sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
 	{% endhighlight %}
 
 #### 2.2 安装MySQL服务
