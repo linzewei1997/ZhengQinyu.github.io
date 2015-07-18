@@ -332,3 +332,16 @@ public static void main(String[] args) {
 }
 {% endhighlight %}
 
+
+#####定义泛型方法
+
+只是想要定义一个泛型的方法（类不是泛型的），格式如下
+
+{% highlight java %}
+public <T> T createClass(Class<T> cls){
+		T obj = null;
+		return obj;
+}
+{% endhighlight %}
+
+
