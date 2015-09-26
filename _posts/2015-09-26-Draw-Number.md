@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "数字字符画"
-categories: 
-tags: 
+categories: 杂七杂八
+tags: 字符画
 date: 2015-09-26 19:51:28
 ---
 
