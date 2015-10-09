@@ -27,7 +27,7 @@ For each test case, you should output two lines. The first line is "Case #:", # 
 ### 样例输入
 
 	2
-	1 2
+	1 2zz
 	112233445566778899 998877665544332211
 
 ### 样例输出
