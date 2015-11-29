@@ -38,7 +38,8 @@ sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 
 #### 2.2 安装MySQL服务
 
-	补充：检查"D:\EnvPath\mysql-5.6.25-winx64\data"是否存在，如果不存在（mysql版本5.7.9开始后是没有的），先执行"mysqld --initialize-insecure"生成这些数据库文件
+	补充：检查"D:\EnvPath\mysql-5.6.25-winx64\data"是否存在，如果不存在（mysql版本5.7.9开始后是没有的），
+	先执行"mysqld --initialize-insecure"生成这些数据库文件
 
 用管理员权限，cd 到MySQL安装目录的bin目录下，执行`mysqld install`安装mysql服务，安装成功后显示`Service successfully installed.`,如果想卸载该服务可以执行`mysqld remove`卸载服务。  
 
