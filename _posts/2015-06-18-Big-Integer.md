@@ -39,50 +39,50 @@ For each test case, you should output two lines. The first line is "Case #:", # 
 
 [南阳理工ACM题目-103：A+B Problem II](http://acm.nyist.net/JudgeOnline/problem.php?pid=103)
 
-	{% highlight c++ %}
-	#include <iostream>
-	#include <string>
-	using namespace std;
+{% highlight c++ %}
+#include <iostream>
+#include <string>
+using namespace std;
 	
-	int main()
+int main()
+{
+	char str[1002];
+	string str1,str2,ts;
+	int n,a,b,k,id,m=1;
+	cin >> n;
+	while (n--)
 	{
-		char str[1002];
-		string str1,str2,ts;
-		int n,a,b,k,id,m=1;
-		cin >> n;
-		while (n--)
+		cin >> str1 >> str2;
+		k = id = 0;
+		cout << "Case " << m ++ << ":" << endl << str1 << " + " << str2 << " = ";
+		if (str1.length() < str2.length())
 		{
-			cin >> str1 >> str2;
-			k = id = 0;
-			cout << "Case " << m ++ << ":" << endl << str1 << " + " << str2 << " = ";
-			if (str1.length() < str2.length())
-			{
-				ts = str1;
-				str1 = str2;
-				str2 = ts;
-			}
-			a = str1.length();
-			b = str2.length();
-			for (int i = a-1,j=b-1; j>=0; --i,--j)
-			{
-				k = (str1[i] - '0') + (str2[j] - '0') + k;
-				str[id++] = k % 10;
-				k /= 10;
-			}
-			for (int i = a - b - 1; i >= 0; --i)
-			{
-				k = (str1[i] - '0') + k;
-				str[id++] = k % 10;
-				k /= 10;
-			}
-			if (k > 0)cout << k;
-			for (int i = id - 1; i >= 0; --i)
-			{
-				cout << char(str[i] + '0');
-			}
-			cout << endl;
+		ts = str1;
+		str1 = str2;
+		str2 = ts;
 		}
-		//system("pause");
-		return 0;
+		a = str1.length();
+		b = str2.length();
+		for (int i = a-1,j=b-1; j>=0; --i,--j)
+		{
+		k = (str1[i] - '0') + (str2[j] - '0') + k;
+		str[id++] = k % 10;
+		k /= 10;
+		}
+		for (int i = a - b - 1; i >= 0; --i)
+		{
+		k = (str1[i] - '0') + k;
+		str[id++] = k % 10;
+		k /= 10;
+		}
+		if (k > 0)cout << k;
+		for (int i = id - 1; i >= 0; --i)
+		{
+		cout << char(str[i] + '0');
+		}
+		cout << endl;
 	}
-	{% endhighlight %}
+	//system("pause");
+	return 0;
+}
+{% endhighlight %}
