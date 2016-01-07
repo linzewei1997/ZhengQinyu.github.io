@@ -22,3 +22,5 @@ members:
     link: http://raining.fm/raindrops/
   - name: 谷歌
     link: "https://www.google.com.hk/?gws_rd=cr,ssl"
+  - name: WinRar
+    link: "http://www.rarlab.com/download.htm"
