@@ -157,3 +157,73 @@ date: 2015-04-29 22:09:50
 	{% endhighlight %}
 
 不过如果某个断言结果是`错误`,那么整个测试会停止，并报告错误信息。假如`testA()`先运行，而且断言结果为`错误`，那么`tSubtract()`就不会继续运行了。
+
+### 4、来补充了
+
+	> junit4添加了注解的功能，使得测试更加简单了。来试试
+
+{% highlight java %}
+package com.zqyu;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
+
+public class MainTest {
+
+	@Before
+	public void test1() {
+		System.out.println("@Before");
+	}
+	
+	@BeforeClass
+	public static void test2() {
+		System.out.println("@BeforeClass");
+	}
+	
+	@After
+	public void test3() {
+		System.out.println("@After");
+	}
+	
+	@AfterClass
+	public static void test4() {
+		System.out.println("@AfterClass");
+	}
+	
+	@Ignore
+	@Test
+	public void test5() {
+		System.out.println("test5");
+	}
+	
+	@Test
+	public void test6() {
+		System.out.println("test6");
+	}
+	
+	@Test
+	public void test7() {
+		System.out.println("test7");
+	}
+
+}
+{% endhighlight %}	
+
+输出结果
+
+>@BeforeClass
+@Before
+test6
+@After
+@Before
+test7
+@After
+@AfterClass
+
+
+
+
