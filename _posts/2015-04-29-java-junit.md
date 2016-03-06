@@ -215,14 +215,14 @@ public class MainTest {
 
 输出结果
 
->@BeforeClass
-@Before
-test6
-@After
-@Before
-test7
-@After
-@AfterClass
+>@BeforeClass  
+@Before  
+test6  
+@After  
+@Before  
+test7  
+@After  
+@AfterClass  
 
 
 
