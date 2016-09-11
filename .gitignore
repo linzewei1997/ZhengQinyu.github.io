@@ -7,3 +7,5 @@ _drafts/
 .settings/
 *.sublime-project
 *.sublime-workspace
+_image/
+*.sync_ignore

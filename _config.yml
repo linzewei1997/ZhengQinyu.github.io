@@ -9,7 +9,7 @@ blog:
     name: Quincy                                         # 博客名称
     description: 独行的人走得最快！                         # 博客描述
     title: Quincy                                        # 网页标题
-    url: http://zhengqinyu.github.io                    # 博客地址
+    url: https://zhengqinyu.github.io                    # 博客地址
     duoshuo: huanzhen                                    # 多说ID
     tongji: c086e0236c082c83fd4c34661f274848             # 百度统计ID
     qiniu: http://7tsy3b.com1.z0.glb.clouddn.com         # 七牛云地址
